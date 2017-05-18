@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <title>Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <hr>
+        <form>
+            <h2>About You</h2>
+            <div class="form-group">
+                <h3>Enter your name (Required)</h3>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <h3>Enter link to your photo (Required)</h3>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="imgLink">
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Question #1</h2>
+                <h3>You are almost never late for your appointments</h3>
+                <i><p>1) Strongly Disagree ... 5) Strongly Agree</p></i>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="q1" value=1> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q1" value=2> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q1" value=3> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q1" value=4> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q1" value=5> 5
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Question #2</h2>
+                <h3>You like to be engaged in an active and fast-paced job</h3>
+                <i><p>1) Strongly Disagree ... 5) Strongly Agree</p></i>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="q2" value=1> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q2" value=2> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q2" value=3> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q2" value=4> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q2" value=5> 5
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Question #3</h2>
+                <h3>You enjoy having a wide circle of acquaintances</h3>
+                <i><p>1) Strongly Disagree ... 5) Strongly Agree</p></i>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="q3" value=1> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q3" value=2> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q3" value=3> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q3" value=4> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q3" value=5> 5
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Question #4</h2>
+                <h3>You feel involved when watching TV soaps</h3>
+                <i><p>1) Strongly Disagree ... 5) Strongly Agree</p></i>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="q4" value=1> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q4" value=2> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q4" value=3> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q4" value=4> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q4" value=5> 5
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Question #5</h2>
+                <h3>You are usually the first to react to a sudden event: the telephone ringing or unexpected question</h3>
+                <i><p>1) Strongly Disagree ... 5) Strongly Agree</p></i>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="q5" value=1> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q5" value=2> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q5" value=3> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q5" value=4> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q5" value=5> 5
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Question #6</h2>
+                <h3>You feel that the world is founded on compassion</h3>
+                <i><p>1) Strongly Disagree ... 5) Strongly Agree</p></i>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="q6" value=1> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q6" value=2> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q6" value=3> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q6" value=4> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q6" value=5> 5
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Question #7</h2>
+                <h3>You think that everything in the world is relative</h3>
+                <i><p>1) Strongly Disagree ... 5) Strongly Agree</p></i>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="q7" value=1> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q7" value=2> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q7" value=3> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q7" value=4> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q7" value=5> 5
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Question #8</h2>
+                <h3>Strict observance of the established rules is likely to prevent attaining a good outcome</h3>
+                <i><p>1) Strongly Disagree ... 5) Strongly Agree</p></i>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="q8" value=1> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q8" value=2> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q8" value=3> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q8" value=4> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q8" value=5> 5
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Question #9</h2>
+                <h3>It is difficult to get you excited</h3>
+                <i><p>1) Strongly Disagree ... 5) Strongly Agree</p></i>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="q9" value=1> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q9" value=2> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q9" value=3> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q9" value=4> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q9" value=5> 5
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Question #10</h2>
+                <h3>When making a decision, you rely more on your feelings than on analysis of the situation</h3>
+                <i><p>1) Strongly Disagree ... 5) Strongly Agree</p></i>
+                <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="q10" value=1> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q10" value=2> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q10" value=3> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q10" value=4> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q10" value=5> 5
+                    </label>
+                </div>
+            </div>
+            <button type="button" class="btn btn-default" id="submitBtn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+$(document).ready(function() {
+	var currentURL = window.location.origin;
+
+    $("#submitBtn").click(function() {
+        var imgLink = $("#imgLink").val();
+        var name = $("#name").val();
+        var q1 = $("input[name='q1']:checked").val();
+        var q2 = $("input[name='q2']:checked").val();
+        var q3 = $("input[name='q3']:checked").val();
+        var q4 = $("input[name='q4']:checked").val();
+        var q5 = $("input[name='q5']:checked").val();
+        var q6 = $("input[name='q6']:checked").val();
+        var q7 = $("input[name='q7']:checked").val();
+        var q8 = $("input[name='q8']:checked").val();
+        var q9 = $("input[name='q9']:checked").val();
+        var q10 = $("input[name='q10']:checked").val();
+        console.log(name, imgLink, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10);
+
+        // {"name":"Average Joe","photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg","scores":["3","3","3","3","3","3","3","3","3","3"]}
+
+        var userData = {
+            name: $("#name").val(),
+            photo: $("#imgLink").val(),
+            scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, ]
+        };
+
+        $.post(currentURL + "/api/friends", userData, function(data) {
+        	var matchName = data.name;
+        	var matchPhoto = data.photo;
+        	console.log(matchName, matchPhoto);
+        });
+
+    });
+});
+</script>
