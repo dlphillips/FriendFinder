@@ -1,3 +1,30 @@
 body {
-	color: red;
+	background-color: #9DD9D2;
+}
+
+input[type='radio']{
+ transform: scale(2);
+  }
+
+label, .btn {
+	font-size: 150%;
+}
+
+.row {
+	background-color: #fff;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+h1,h2 {
+	font-weight: bold;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain; 
 }
