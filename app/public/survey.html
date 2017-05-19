@@ -253,13 +253,31 @@
             </div>
             <button type="button" class="btn btn-default" id="submitBtn">Submit</button>
         </form>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Your closest match is <span id="yourMatch">Modal Header</span></h4>
+                    </div>
+                    <div class="modal-body">
+                        <center><img src="" id="imgPath"></center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-	var currentURL = window.location.origin;
+    var currentURL = window.location.origin;
 
     $("#submitBtn").click(function() {
         var imgLink = $("#imgLink").val();
@@ -276,8 +294,6 @@ $(document).ready(function() {
         var q10 = $("input[name='q10']:checked").val();
         console.log(name, imgLink, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10);
 
-        // {"name":"Average Joe","photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg","scores":["3","3","3","3","3","3","3","3","3","3"]}
-
         var userData = {
             name: $("#name").val(),
             photo: $("#imgLink").val(),
@@ -285,9 +301,12 @@ $(document).ready(function() {
         };
 
         $.post(currentURL + "/api/friends", userData, function(data) {
-        	var matchName = data.name;
-        	var matchPhoto = data.photo;
-        	console.log(matchName, matchPhoto);
+            var matchName = data.name;
+            var matchPhoto = data.photo;
+            console.log(matchName, matchPhoto);
+            $('#yourMatch').text(matchName);
+            $("#myModal").modal();
+            $("#imgPath").attr('src', matchPhoto);
         });
 
     });

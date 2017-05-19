@@ -7,6 +7,8 @@ var path = require("path");
 var app = express();
 var PORT = 3000;
 
+app.use(express.static(path.join(__dirname, './app/public')));
+
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -18,7 +20,7 @@ app.use(bodyParser.json({
 }));
 
 // =============================================================
-// ===As a rule, keep the stuff above at the top pof the file===
+// ===As a rule, keep the stuff above at the top of the file===
 // =============================================================
 
 // EXTREMELY important to have these AFTER body parser statements
