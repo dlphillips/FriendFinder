@@ -30,7 +30,6 @@ module.exports = function(app) {
         // iterate through friends data and compare to each
         for (var i = 0; i < friends.length; i++) {
             totalDifference = 0;
-            console.log('Comparing '+newPerson.name+' with '+friends[i].name);
             for (var j = 0; j < 10; j++) {
                 totalDifference = totalDifference + Math.abs(newScores[j] - parseInt(friends[i].scores[j]));
             }
@@ -40,6 +39,7 @@ module.exports = function(app) {
                 lowScore = totalDifference;
                 friendImage = friends[i].photo;
             }
+            console.log('Comparing '+newPerson.name+' with '+friends[i].name+'. Total difference is '+totalDifference+'.');
             // if current frined is better match, replace varaiables with new friend
             if (totalDifference < lowScore) {
                 lowScore = totalDifference;
